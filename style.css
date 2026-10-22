@@ -1,24 +1,24 @@
 body{ 
+    background-image: none;
+    background-color: #11112b;
+    color: #f3eeff;
     font-family: Arial, sans-serif;
-    /*Deep Mars Dark Theme Gradient*/
-    background-color: #0b0c2a;
-    background-image:
-        radial-gradient(circle at 50% 100%, #4a150e 0%, transparent 80%), 
-        radial-gradient(2px 2px at 20px 30px, white,transparent),
-        radial-gradient(2px 2px at 90px 80px, white,transparent),
-        radial-gradient(1.5px 1.5px at 150px 40px, white, transparent),
-        radial-gradient(2px 2px at 60px 150px, white, transparent),
-        radial-gradient(1.5px 1.5px at 180px 120px, white, transparent),
-        radial-gradient(1px 1px at 220px 60px, white, transparent);
-    background-repeat: repeat;
-    background-size: 100% 100%, 250px 250px, 250px 250px, 250px 250px, 250px 250px, 250px 250px, 250px 250px;
-     color: #ffffff;
-     padding:20px; 
-     line-height: 1.6; 
+}
+    h1, h2, h3, h4, h5, h6 {
+        color: #b9a7f5;
+    }
     
-    animation: twinkle 6s ease-in-out infinite;
- }
- @keyframes twinkle {
+    .log-card {
+     background-color: #ffffff;
+     border-left: 3px solid #b9a7f5;
+     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+ .log-card:hover {
+     background-color: #ffffff;
+     border-left-color: #79dceb;
+    }
+ @keyframes pulse {
     0%, 100% {
         filter: brightness(1);
     }
@@ -29,11 +29,11 @@ body{
 
  h1 {
     font-size: 32px;
-     color: #ffcc00;
+     color: #b9a7f5;
  }
 
  h2,h3,h4,h5,h6,h7 {
-     color: #66ccff;
+     color: #b9a7f5;
      margin-top: 20px;
      line-height: 1.6;
  }
@@ -51,7 +51,7 @@ body{
 
  .log-card {
      background-color: rgba(255, 255, 255, 0.05);
-     border-left: 3px solid #66ccff;
+     border-left: 3px solid #79dceb;
      border-radius: 10px;
      padding: 20px;
      margin: 20px 0;
@@ -61,55 +61,202 @@ body{
 
     .log-card:hover {
     background-color: rgba(255, 255, 255, 0.1);
-    border-left-color: #ff4d4d;
+    border-left-color: #79dceb;
     transform: scale(1.02);
     }
     
     /* Mars Command Button */
     button, .send-btn {
-    background: linear-gradient(135deg,  #ff4d4d, #e05638);
-    color: #ffffff;
-    border: none;
+    background: linear-gradient(135deg,  #493477, #211d3b);
+    color: #f3eeff;
+    border: 1px solid rgba(185, 167, 245, 0.4);
     padding: 12px 24px;
-    border-radius: 6px;
+    border-radius: 12px;
     font-weight: bold;
     cursor: pointer;
-    box-shadow: 0 0 15px rgba(255, 104, 77, 0.4);
+    box-shadow: 0 0 15px rgba(121, 220, 235, 0.15);
     transition: all 0.3s ease;  
  }
 
  button:hover { 
      transform: translateY(-2px);
-    box-shadow: 0 0 25px rgba(255, 77, 77, 0.4);
- }
-
- .mars-surface {
-    position: relative;
-    width: 100%;
-    height: 120px;
-    background:
-        radial-gradient(circle at 15% 60%, rgba(0,0,0,0.3) 8px, transparent 9px),
-        radial-gradient(circle at 45% 40%, rgba(0,0,0,0.25) 6px, transparent 7px),
-        radial-gradient(circle at 70% 65%, rgba(0,0,0,0.3) 5px, transparent 7px),
-        radial-gradient(circle at 85% 35%, rgba(0,0,0,0.3) 10px, transparent 11px),
-        radial-gradient(circle at 30% 80%, rgba(0,0,0,0.2) 5px, transparent 6px),
-        linear-gradient(to bottom, #7a3520, #4a1f12);
-    clip-path: polygon(
-        0% 40%, 5% 35%, 12% 45%, 20% 30%, 30% 42%,
-        40% 25%, 50% 38%, 60% 20%, 70% 35%,
-        80% 28%, 90% 40%, 100% 32%, 100% 100%, 0% 100%
-    );
-    margin-top: 40px;
+    box-shadow: 0 0 25px rgba(121, 220, 235, 0.4);
  }
  
+.hero  {
+    position: relative;
+    background: #11112b;
+    overflow: hidden;
+    text-align: left;
+    padding: 70px 45px;
+    min-height: 420px;
+    border-radius: 20px;
+    background:
+    url("c:\Users\HP\CrossDevice\Obaayaapoku's Tab A9\storage\Pictures\file_0000000090988210a5ae6b9a4cf54cec.png"),
+        radial-gradient(ellipse at 80% 20%, #493477 0%, transparent 40%),
+    linear-gradient(135deg, #11112b, #211d3b);
+    color: #f3eeff;
+    border: 1px solid rgba(185, 167, 245, 0.35);
+    box-shadow: 0 0 25px rgba(121, 220, 235, 0.12);
+    margin-bottom: 30px;
+    
+    
+}
+.hero h1 {
+    color: #f3eeff;
+    font-size: 48px;
+    line-height: 1.15;
+    max-width: 700px; 
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 600px;
+    line-height: 1.7;
+}
+
+.tagline {
+    font-size: 20px;
+    margin-top: 10px auto 20px;
+    }
+    nav a {
+        display: inline-block;
+        background: #493477;
+        color: #f3eeff;
+        padding: 10px 18px;
+        margin: 5px;
+        border: 1px solid rgba(185, 167, 245, 0.35);
+         border-radius: 20px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    nav a:hover {
+        background: #79dceb;
+        color: #11112b;
+    }
+
+    
+
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    .log-card h2 {
+        color: #b9a7f5
+    }
+
+    * { box-sizing: border-box; }
+    .about-log{ border-left-color: #79dceb; }
+    .food-log, .food-log:hover{ background: #211d3b; border-left-color: #79dceb; color: #f3eeff; }
+    .food-log h2 { color: #b9a7f5; }
+
+    .music-log, .music-log:hover{ background: #211d3b; border-left-color: #79dceb; color: #f3eeff; }
+    .music-log h2 { color: #b9a7f5; }
+
+    .football-log, .football-log:hover{ background: #1e1b3a; border-left-color: #79dceb; }
+    .football-log h2 { color: #b9a7f5; }
+
+    .dreams-log, .dreams-log:hover{ background: #211d3b; border-left-color: #79dceb; color:#f3eeff}
+    .dreams-log h2 { color: #b9a7f5; }
+
+    .reflection-log, .reflection-log:hover{ background: #211d3d; border-left-color: #79dceb; color: #f3eeff; }
+    .reflection-log h2 { color: #b9a7f5; }
+
+    .facts {
+        margin: 10px 0 15px;
+    }
+
+    .facts span {
+        display: inline-block;
+        background: rgba(225, 225, 225, 0.2);
+        border: 1px solid currentColor;
+        padding: 6px 14px;
+        margin: 4px 4px 4px 0;
+        border-radius: 20px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    nav {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background: #211d3b;
+        text-align: center;
+        padding: 12px 8px;
+        margin-bottom: 20px;
+        border: 1px solid rgba(185, 167, 245, 0.35);
+        border-radius: 14px;
+        box-shadow: 0 0 18px rgba(121, 220, 235, 0.1 );
+    }
+
+
+    .explore-btn {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 14px 28px;
+        border: 1px solid #79dceb;
+        border-radius: 30px;
+        background: linear-gradient(135deg, #493477, #211d3d );
+        color: #f3eeff;
+        text-decoration: none;
+        font-weight: bold;
+        box-shadow: 0 0 15px rgba(121, 220, 235, 0.2 );
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .explore-btn:hover {
+        transform: translate(-3px);
+        box-shadow: 0 0 25px rgba(121, 220, 235, 0.5);
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        max-width: 650px;
+        text-align: center;
+
+    }
+
+    
+    .hero {
+    background-image: url("images/space-scene.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.mission-status {
+    background: rgba(17, 17, 43, 0.9);
+    border: 1px solid #493477;
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-top: 24px;
+    color: #f3eeff;
+    max-width: 320px;
+    box-shadow: 0 0 15px rgba(121, 220, 235, 0.4);
+}
+
+.mission-status h3 {
+    color: #79dceb;
+    margin-top: 0;
+}
+
+.mission-status p {
+    margin: 10px 0;
+}
+
+.status-active {
+    color: #79dceb;
+    text-shadow: 0 0 6px rgba(121, 220, 235, 0.65 );
+    font-weight: bold;
+}
 
     footer{
-        text-align: center;
-        margin-top: 60px;
-        padding: 20px;
-        color: #66ccff;
-        font-size: 14px;
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
+      color: #b9a7f5;
     }
 
     html{
@@ -118,4 +265,5 @@ body{
 
 
     
+   
    
